@@ -1,0 +1,20 @@
+[
+  {
+    "title": "Foo Title",
+    "author": 1,
+    "content": "Foo content",
+    "parent": 1
+  },
+  {
+    "title": "Foo Title",
+    "author": 1,
+    "content": "Foo content",
+    "parent": 1
+  },
+  {
+    "title": "Foo Title",
+    "author": 1,
+    "content": "Foo content",
+    "parent": 1
+  }
+]

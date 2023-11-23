@@ -1,0 +1,23 @@
+[
+  {
+    "title": "Foo Title",
+    "description": "Foo description",
+    "avatar": "foo/path",
+    "owner": 1,
+    "editor": 0
+  },
+  {
+    "title": "Foo Title",
+    "description": "Foo description",
+    "avatar": "foo/path",
+    "owner": 0,
+    "editor": 0
+  },
+  {
+    "title": "Foo Title",
+    "description": "Foo description",
+    "avatar": "foo/path",
+    "owner": 0,
+    "editor": 1
+  }
+]

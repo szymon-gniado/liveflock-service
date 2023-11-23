@@ -1,0 +1,34 @@
+[
+  {
+    "email": "foo1@foo.foo",
+    "username": "foo1",
+    "display_name": "foo1",
+    "avatar": "foo1.png",
+    "owner": 1,
+    "editor": 0
+  },
+  {
+    "email": "foo1@foo.foo",
+    "username": "foo1",
+    "display_name": "foo1",
+    "avatar": "foo1.png",
+    "owner": 1,
+    "editor": 0
+  },
+  {
+    "email": "foo1@foo.foo",
+    "username": "foo1",
+    "display_name": "foo1",
+    "avatar": "foo1.png",
+    "owner": 1,
+    "editor": 0
+  },
+  {
+    "email": "foo1@foo.foo",
+    "username": "foo1",
+    "display_name": "foo1",
+    "avatar": "foo1.png",
+    "owner": 1,
+    "editor": 0
+  }
+]

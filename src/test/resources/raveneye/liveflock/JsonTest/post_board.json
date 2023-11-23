@@ -1,0 +1,17 @@
+[
+  {
+    "title": "Foo Title",
+    "description": "Foo description",
+    "avatar": "foo/path"
+  },
+  {
+    "title": "Foo Title",
+    "description": "Foo description",
+    "avatar": "foo/path"
+  },
+  {
+    "title": "Foo Title",
+    "description": "Foo description",
+    "avatar": "foo/path"
+  }
+]
