@@ -1,6 +1,6 @@
 package raveneye.liveflock.TestEntities;
 
-import raveneye.liveflock.entity.Post;
+import raveneye.liveflock.Entities.Post;
 
 import java.time.LocalDate;
 

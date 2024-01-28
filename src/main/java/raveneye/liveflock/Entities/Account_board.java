@@ -1,4 +1,4 @@
-package raveneye.liveflock.entity;
+package raveneye.liveflock.Entities;
 
 import org.springframework.data.annotation.Id;
 

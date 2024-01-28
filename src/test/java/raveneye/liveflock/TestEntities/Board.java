@@ -10,7 +10,7 @@ public enum Board {
             LocalDate.of(2003,11,20),
             "test/path"
     );
-    private final raveneye.liveflock.entity.Board board;
+    private final raveneye.liveflock.Entities.Board board;
 
     Board(
             Long id,
@@ -19,7 +19,7 @@ public enum Board {
             LocalDate creation_date,
             String avatar
     ) {
-        this.board = new raveneye.liveflock.entity.Board(
+        this.board = new raveneye.liveflock.Entities.Board(
                 id,
                 title,
                 description,
@@ -28,7 +28,7 @@ public enum Board {
         );
     };
 
-    public raveneye.liveflock.entity.Board getBoard() {
+    public raveneye.liveflock.Entities.Board getBoard() {
         return this.board;
     }
 }

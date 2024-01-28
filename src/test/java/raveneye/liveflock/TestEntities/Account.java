@@ -13,7 +13,7 @@ public enum Account {
             "test/path"
     );
 
-    private final raveneye.liveflock.entity.Account account;
+    private final raveneye.liveflock.Entities.Account account;
 
     Account(
             Long id,
@@ -24,7 +24,7 @@ public enum Account {
             LocalDate creation_date,
             String avatar
     ) {
-        this.account = new raveneye.liveflock.entity.Account(
+        this.account = new raveneye.liveflock.Entities.Account(
                 id,
                 email,
                 username,
@@ -35,7 +35,7 @@ public enum Account {
         );
     };
 
-    public raveneye.liveflock.entity.Account getAccount() {
+    public raveneye.liveflock.Entities.Account getAccount() {
         return account;
     }
 }
