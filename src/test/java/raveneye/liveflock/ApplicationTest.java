@@ -19,7 +19,7 @@ class ApplicationTest {
   @Autowired
   TestRestTemplate restTemplate;
 
-  raveneye.liveflock.entity.Account account = Account.SHOULD_PASS.getAccount();
+  raveneye.liveflock.Entities.Account account = Account.SHOULD_PASS.getAccount();
 
     // In case of request for account that doesn't exist return 404 NOT FOUND
 	@Test
@@ -48,7 +48,7 @@ class ApplicationTest {
 
     @Test
     void shouldReturnURIofNewAccount() {
-        raveneye.liveflock.entity.Account newAccount = new raveneye.liveflock.entity.Account(
+        raveneye.liveflock.Entities.Account newAccount = new raveneye.liveflock.Entities.Account(
                 null,
                 "new@e.mail",
                 "new_username3",

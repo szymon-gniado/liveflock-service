@@ -1,10 +1,11 @@
-package raveneye.liveflock.JsonTest;
+package raveneye.liveflock.JsonTests;
 
 import org.junit.jupiter.api.Test;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.boot.test.autoconfigure.json.JsonTest;
 import org.springframework.boot.test.json.JacksonTester;
 import org.springframework.boot.test.json.JsonContent;
+import raveneye.liveflock.TestEntities.Account;
 
 import java.io.IOException;
 
@@ -14,16 +15,16 @@ import static org.assertj.core.api.Assertions.assertThat;
 public class AccountControllerRepository {
 
     @Autowired
-    private JacksonTester<raveneye.liveflock.entity.Account> json;
+    private JacksonTester<raveneye.liveflock.Entities.Account> json;
 
     // Declare test account
-    raveneye.liveflock.entity.Account entity = raveneye.liveflock.TestEntities.Account.SHOULD_PASS.getAccount();
+    raveneye.liveflock.Entities.Account entity = Account.SHOULD_PASS.getAccount();
 
     @Test
     public void accountSerializationTest() throws IOException {
 
         //Make account into a json
-        JsonContent<raveneye.liveflock.entity.Account> account_json = json.write(entity);
+        JsonContent<raveneye.liveflock.Entities.Account> account_json = json.write(entity);
 
         // Compare  account_json and it's values to account.json
         assertThat(account_json).isEqualToJson("account.json");
@@ -58,7 +59,7 @@ public class AccountControllerRepository {
                 }
                 """;
         // Parse expected json into Account object
-        raveneye.liveflock.entity.Account expected = json.parseObject(expected_json);
+        raveneye.liveflock.Entities.Account expected = json.parseObject(expected_json);
 
         // Compare expected_account values to test account ones
         assertThat(expected.email()).isEqualTo(entity.email());
